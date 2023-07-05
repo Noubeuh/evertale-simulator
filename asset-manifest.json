@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/evertale-simulator/static/css/main.ac2fe250.css",
-    "main.js": "/evertale-simulator/static/js/main.f9a523fc.js",
+    "main.css": "/evertale-simulator/static/css/main.8aeb8c2c.css",
+    "main.js": "/evertale-simulator/static/js/main.d351077d.js",
     "static/js/787.d30e2bc2.chunk.js": "/evertale-simulator/static/js/787.d30e2bc2.chunk.js",
     "static/media/logo.webp": "/evertale-simulator/static/media/logo.f27f84f3e3a95c2fca1b.webp",
     "static/media/icon-trash-white.svg": "/evertale-simulator/static/media/icon-trash-white.9230652f633a26b4a729d9e4597d9511.svg",
     "index.html": "/evertale-simulator/index.html",
     "static/media/icon-plus-white.svg": "/evertale-simulator/static/media/icon-plus-white.3d322ea8023be36f08950f7c4556f8b7.svg",
-    "main.ac2fe250.css.map": "/evertale-simulator/static/css/main.ac2fe250.css.map",
-    "main.f9a523fc.js.map": "/evertale-simulator/static/js/main.f9a523fc.js.map",
+    "main.8aeb8c2c.css.map": "/evertale-simulator/static/css/main.8aeb8c2c.css.map",
+    "main.d351077d.js.map": "/evertale-simulator/static/js/main.d351077d.js.map",
     "787.d30e2bc2.chunk.js.map": "/evertale-simulator/static/js/787.d30e2bc2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac2fe250.css",
-    "static/js/main.f9a523fc.js"
+    "static/css/main.8aeb8c2c.css",
+    "static/js/main.d351077d.js"
   ]
 }
