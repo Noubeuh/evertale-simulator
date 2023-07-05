@@ -1,0 +1,40 @@
+button {
+    height: em(50);
+    border: 0;
+    cursor: pointer;
+}
+
+.btn-danger {
+    @include button-base-configuration;
+    background-color: $danger;
+    color: $white;
+}
+
+.btn-cancel {
+    @include button-base-configuration;
+    background-color: $light;
+}
+
+.icon-warn-container {
+    background-color: $danger;
+    border-radius: 25px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    &:hover {
+        background-color: $white;
+        border: 1px solid $danger;
+    }
+}
+
+.icon-success-container {
+    background-color: $success;
+    border-radius: 25px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    &:hover {
+        background-color: $white;
+        border: 1px solid $success;
+    }
+}

@@ -1,0 +1,19 @@
+#user-container {
+    #user-list-container {
+        overflow: auto;
+    }
+    .user-list {
+        height: 390px;
+        @include for-phone-only {
+            height: 100%
+        }
+    }
+    .user-list-description-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p {
+            margin: 0;
+        }
+    }
+}

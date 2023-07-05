@@ -1,0 +1,15 @@
+.MuiDialog-container {
+    .css-zab20v-MuiList-root {
+        @include for-tablet-portrait-up {
+            display: flex;
+            flex-flow: row-reverse;
+        }
+    }
+    .css-aw0cy1-MuiTypography-root-MuiDialogTitle-root {
+        margin-top: $margin;
+        font-size: em(16);
+    }
+    .MuiPaper-root {
+        border-radius: 25px;
+    }
+}

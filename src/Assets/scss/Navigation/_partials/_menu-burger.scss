@@ -1,0 +1,80 @@
+.menu {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-evenly;
+    & > li {
+        margin: 0 1rem;
+        overflow: hidden;
+    }
+    @include for-phone-only {
+        bottom: -999%;
+    }
+}
+
+.menu-button-container {
+    display: none;
+    height: 100%;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    @include for-phone-only {
+        $width: 50px;
+        display: flex;
+        z-index: 10;
+        background-color: $dark;
+        border-radius: 50% 50%;
+        width: $width;
+        position: absolute;
+        left: calc(50% - $width/2);
+        bottom: 25px;   
+    }
+}
+
+#menu-toggle {
+    display: none;
+    @include for-phone-only {
+        &:checked {
+            + .menu-button-container {
+                .menu-button {background: rgba(255, 255, 255, 0);}
+                .menu-button::before { 
+                    margin-top: 0px;
+                    transform: rotate(405deg);
+                }
+                .menu-button::after {
+                    margin-top: 0px;
+                    transform: rotate(-405deg);
+                }
+            }
+            ~ .menu {
+                display: flex;
+                position: absolute;
+                bottom: -40px;
+                height: 100vh;
+                left: 0;
+                flex-direction: column;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+                transition: bottom 0.5s ease 0s;
+                background-color: $dark;
+            }
+        }
+    }
+}
+
+.menu-button {
+    background-color: $dark;
+    @include menu-button-pseudo-element;
+    &::before {
+        @include menu-button-pseudo-element;
+        margin-top: -8px;
+    }
+    &::after {
+        @include menu-button-pseudo-element;
+        margin-top: 8px;
+    }
+}

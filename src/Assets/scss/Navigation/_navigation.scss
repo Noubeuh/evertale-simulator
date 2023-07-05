@@ -1,0 +1,46 @@
+.navigation {
+    @import './_partials/menu-burger';
+    height: 50px;
+    flex-direction: row;
+    @include for-phone-only {
+        position: fixed;
+        bottom: 20px;
+        width: 100%;
+    }
+    & > * {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    li {
+        @include reset-list;
+        font-size: em(20);
+        position: relative;
+        &:after {
+            @include anchor-pseudo-after;
+            width: 0;
+
+            -o-transition:.5s;
+            -ms-transition:.5s;
+            -moz-transition:.5s;
+            -webkit-transition:.5s;
+            transition:.5s;
+        }
+        &:hover:after {
+            width: 100%;
+        }
+        @include for-phone-only {
+            padding: $padding 0;
+        }
+    }
+
+    .nav-active {
+        position: relative;
+        &::after {
+            @include anchor-pseudo-after;
+            width: auto;
+        }
+    }
+
+   
+}

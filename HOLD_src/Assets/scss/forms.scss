@@ -1,0 +1,30 @@
+form {
+    display: flex;
+    justify-content: center;
+}
+
+ul {padding:0;}
+input {
+    height: em(50);
+    border: 0.5px solid $border;
+    text-align: left;
+    padding-left: $padding;
+    width: 100%;
+}
+
+.first-element {
+    border-top: 2px solid $border;
+}
+
+.list-item {   
+    display: flex;
+    border-bottom: 2px solid $border;
+    justify-content: space-between;
+    width: 85%;
+    padding: $padding 0;
+    margin: auto;    
+
+    label {
+        width: 75%;
+    }
+}

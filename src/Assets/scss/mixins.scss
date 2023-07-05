@@ -1,0 +1,60 @@
+@mixin for-phone-only {
+    @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+    @media (min-width: 600px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+    @media (min-width: 900px) { @content; }
+}
+@mixin for-desktop-up {
+    @media (min-width: 1200px) { @content; }
+}
+@mixin for-big-desktop-up {
+    @media (min-width: 1800px) { @content; }
+}
+
+$browser-context: 16;
+@function em($pixels, $context: $browser-context) {
+    @return #{$pixels/$context}em;
+}
+
+@mixin reset-list {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+@mixin anchor-pseudo-after {
+    @include reset-list;
+
+    position: absolute;
+    content: '';
+    height: 2px;
+    bottom: 0px; 
+    left: 0;
+    right: 0;
+    background: $border;
+    top: 40px;
+}
+
+@mixin menu-button-pseudo-element {
+    display: block;
+    background-color: $white;
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+    content: '';
+}
+
+@mixin button-base-configuration {
+    height: em(50);
+    border: 0;
+    cursor: pointer;
+    line-height: em(50);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

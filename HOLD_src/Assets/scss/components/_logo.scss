@@ -1,0 +1,9 @@
+.App-header {
+    padding-top: 30px;
+    img {
+        @include for-phone-only {
+            width: 15%;
+        }
+    }
+}
+
