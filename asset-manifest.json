@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/evertale-simulator/static/css/main.6310a949.css",
-    "main.js": "/evertale-simulator/static/js/main.5d26dcdd.js",
+    "main.js": "/evertale-simulator/static/js/main.8b7670fe.js",
     "static/js/787.d30e2bc2.chunk.js": "/evertale-simulator/static/js/787.d30e2bc2.chunk.js",
     "static/media/logo.webp": "/evertale-simulator/static/media/logo.f27f84f3e3a95c2fca1b.webp",
     "index.html": "/evertale-simulator/index.html",
     "main.6310a949.css.map": "/evertale-simulator/static/css/main.6310a949.css.map",
-    "main.5d26dcdd.js.map": "/evertale-simulator/static/js/main.5d26dcdd.js.map",
+    "main.8b7670fe.js.map": "/evertale-simulator/static/js/main.8b7670fe.js.map",
     "787.d30e2bc2.chunk.js.map": "/evertale-simulator/static/js/787.d30e2bc2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6310a949.css",
-    "static/js/main.5d26dcdd.js"
+    "static/js/main.8b7670fe.js"
   ]
 }
